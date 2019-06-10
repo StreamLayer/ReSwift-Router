@@ -506,7 +506,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Benjamin Encz";
 				TargetAttributes = {
 					6209C04A1C54256F004E6B66 = {
@@ -541,11 +541,11 @@
 			};
 			buildConfigurationList = 625E66C71C1FFE270027C288 /* Build configuration list for PBXProject "ReSwiftRouter" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = 625E66C31C1FFE270027C288;
 			productRefGroup = 625E66CE1C1FFE280027C288 /* Products */;
@@ -553,11 +553,11 @@
 			projectRoot = "";
 			targets = (
 				625E66CC1C1FFE280027C288 /* ReSwiftRouter-iOS */,
-				625E66F01C2000EA0027C288 /* ReSwiftRouterTests-iOS */,
 				6209C04A1C54256F004E6B66 /* ReSwiftRouter-watchOS */,
 				6209C0601C5427E0004E6B66 /* ReSwiftRouter-tvOS */,
-				6209C0691C5427E0004E6B66 /* ReSwiftRouter-tvOSTests */,
 				6209C0871C5428DE004E6B66 /* ReSwiftRouter-macOS */,
+				625E66F01C2000EA0027C288 /* ReSwiftRouterTests-iOS */,
+				6209C0691C5427E0004E6B66 /* ReSwiftRouter-tvOSTests */,
 				6209C0901C5428DE004E6B66 /* ReSwiftRouter-macOSTests */,
 			);
 		};
@@ -785,6 +785,7 @@
 				INFOPLIST_FILE = ReSwiftRouter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.benjamin-encz.ReSwiftRouter";
 				PRODUCT_NAME = ReSwiftRouter;
 				SDKROOT = watchos;
@@ -810,6 +811,7 @@
 				INFOPLIST_FILE = ReSwiftRouter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.benjamin-encz.ReSwiftRouter";
 				PRODUCT_NAME = ReSwiftRouter;
 				SDKROOT = watchos;
@@ -834,6 +836,7 @@
 				INFOPLIST_FILE = ReSwiftRouter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.benjamin-encz.ReSwiftRouter";
 				PRODUCT_NAME = ReSwiftRouter;
 				SDKROOT = appletvos;
@@ -858,6 +861,7 @@
 				INFOPLIST_FILE = ReSwiftRouter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.benjamin-encz.ReSwiftRouter";
 				PRODUCT_NAME = ReSwiftRouter;
 				SDKROOT = appletvos;
@@ -879,6 +883,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "de.benjamin-encz.ReSwiftRouter-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
@@ -895,6 +900,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "de.benjamin-encz.ReSwiftRouter-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
@@ -916,6 +922,7 @@
 				INFOPLIST_FILE = ReSwiftRouter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.benjamin-encz.ReSwiftRouter";
 				PRODUCT_NAME = ReSwiftRouter;
@@ -941,6 +948,7 @@
 				INFOPLIST_FILE = ReSwiftRouter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.benjamin-encz.ReSwiftRouter";
 				PRODUCT_NAME = ReSwiftRouter;
@@ -991,6 +999,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1050,6 +1059,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1116,6 +1126,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.benjamin-encz.ReSwiftRouter";
 				PRODUCT_NAME = ReSwiftRouter;
 				SKIP_INSTALL = YES;
@@ -1141,6 +1152,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.benjamin-encz.ReSwiftRouter";
 				PRODUCT_NAME = ReSwiftRouter;
 				SKIP_INSTALL = YES;
