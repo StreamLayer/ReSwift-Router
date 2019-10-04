@@ -1,6 +1,14 @@
 # Upcoming
 
 **Breaking API Changes:**
+- Rename Components of the `Routable` protocol (#107) - @hlineholm
+
+
+# 0.7.0
+
+*Released: 2019-08-01*
+
+**Breaking API Changes:**
 - Remove use of `StandardAction` and `StandardActionConvertible` (#82) - @hlineholm
 
     - Removes the compatibility of this with `ReSwift-Recorder`, which itself is being deprecated.
@@ -10,7 +18,8 @@
     - Renamed `routableIndexForRouteSegment(_ segment:)` method  to `routableIndex(for segment:)`
 
 **Other:**
-- Update to ReSwift 4.1.1 and fix project setup for SwiftPM & Carthage - @djtech42
+- Update to Swift 5  -- @djtech42
+- Update to ReSwift 5.0.0 and fix project setup for SwiftPM & Carthage (#115, #124) - @djtech42, @DivineDominion
 
 # 0.6.0
 
