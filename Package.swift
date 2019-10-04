@@ -1,4 +1,4 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.1
 
 import PackageDescription
 
@@ -8,7 +8,7 @@ let package = Package(
       .library(name: "ReSwift-Router", targets: ["ReSwiftRouter"]),
     ],
     dependencies: [
-      .package(url: "https://github.com/ReSwift/ReSwift.git", .upToNextMajor(from: "5.0.0"))
+      .package(url: "https://github.com/StreamLayer/ReSwift.git", .upToNextMajor(from: "5.0.0-slr.403"))
     ],
     targets: [
       .target(
