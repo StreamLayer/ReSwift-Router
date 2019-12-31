@@ -37,7 +37,7 @@ workflows:
             echo "CLANG_ENABLE_MODULE_DEBUGGING = NO" >> $xcconfig
             echo "PRODUCT_NAME = ${PREFIX}${PRODUCT_NAME}" >> $xcconfig
             echo "PRODUCT_MODULE_NAME = ${PREFIX}${PRODUCT_NAME}" >> $xcconfig
-            echo "OTHER_LDFLAGS = -framework ${PREFIX}ReSwift"
+            echo "OTHER_LDFLAGS = -framework ${PREFIX}ReSwift" >> $xcconfig
             export XCODE_XCCONFIG_FILE="$xcconfig"
 
             yarn semantic-release
