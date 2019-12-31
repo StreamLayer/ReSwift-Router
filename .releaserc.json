@@ -9,11 +9,11 @@
       "assets": ["report.json"]
     }],
     ["@semantic-release/exec", {
-      "publishCmd": "carthage build --archive --archive-output SLR_ReSwift.framework.zip"
+      "prepareCmd": "carthage build --cache-builds --archive --archive-output SLR_ReSwiftRouter.framework.zip"
     }],
     ["@semantic-release/github", {
       "assets": [
-        { "path": "SLR_ReSwift.framework.zip" },
+        { "path": "SLR_ReSwiftRouter.framework.zip" },
         { "path": "report.json" }
       ]
     }]

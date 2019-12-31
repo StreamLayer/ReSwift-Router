@@ -43,14 +43,10 @@
 		6209C0AB1C542BC7004E6B66 /* ReSwiftRouterTestsUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C0A9D51C50AF8B00139FA7 /* ReSwiftRouterTestsUnitTests.swift */; };
 		6209C0AC1C542BCA004E6B66 /* ReSwiftRouterIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C0A9D41C50AF8B00139FA7 /* ReSwiftRouterIntegrationTests.swift */; };
 		625E66F61C2000EA0027C288 /* ReSwiftRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625E66CD1C1FFE280027C288 /* ReSwiftRouter.framework */; };
-		D47F3A4F1E0083B700AAA70A /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47F3A4E1E0083B700AAA70A /* ReSwift.framework */; };
 		D47F3A531E0083EB00AAA70A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47F3A511E0083EB00AAA70A /* Nimble.framework */; };
 		D47F3A541E0083EB00AAA70A /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47F3A521E0083EB00AAA70A /* Quick.framework */; };
-		D47F3A5F1E0087BE00AAA70A /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47F3A5E1E0087BE00AAA70A /* ReSwift.framework */; };
 		D47F3A681E00880400AAA70A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47F3A621E00880400AAA70A /* Nimble.framework */; };
 		D47F3A6A1E00880400AAA70A /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47F3A641E00880400AAA70A /* Quick.framework */; };
-		D47F3A7C1E0088E600AAA70A /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47F3A751E0088E600AAA70A /* ReSwift.framework */; };
-		D47F3A831E0088FE00AAA70A /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47F3A801E0088FE00AAA70A /* ReSwift.framework */; };
 		D47F3A8E1E00891200AAA70A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47F3A871E00891200AAA70A /* Nimble.framework */; };
 		D47F3A901E00891200AAA70A /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47F3A891E00891200AAA70A /* Quick.framework */; };
 /* End PBXBuildFile section */
@@ -128,7 +124,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D47F3A831E0088FE00AAA70A /* ReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +131,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D47F3A7C1E0088E600AAA70A /* ReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +148,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D47F3A5F1E0087BE00AAA70A /* ReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +165,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D47F3A4F1E0083B700AAA70A /* ReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
