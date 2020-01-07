@@ -29,8 +29,8 @@ workflows:
               --product-name "$PRODUCT_NAME" \
               --include ../ReSwift/report.json
 
-            xcconfig=$(mktemp /tmp/static.XXXXXX.xcconfig)
-            trap 'rm -f "$xcconfig"; git checkout HEAD -- "$DIR"; git clean -f' INT TERM HUP EXIT
+            xcconfig=$(mktemp /tmp/static.xcconfig.XXXXXX)
+            trap 'rm $xcconfig; git checkout HEAD -- "$DIR"; git clean -f' INT TERM HUP EXIT
 
             echo 'FRAMEWORK_SEARCH_PATHS[sdk=appletv*] = $(inherited) $(PROJECT_DIR)/Carthage/Build/tvOS' >> $xcconfig
             echo 'FRAMEWORK_SEARCH_PATHS[sdk=iphone*] = $(inherited) $(PROJECT_DIR)/Carthage/Build/iOS' >> $xcconfig
