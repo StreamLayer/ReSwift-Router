@@ -30,9 +30,7 @@ workflows:
               --include ../ReSwift/report.json
 
             xcconfig=$(mktemp /tmp/static.xcconfig.XXXXXX)
-            trap 'rm -f "$xcconfig"; git checkout -- "$DIR"' INT TERM HUP EXIT
-
-            swift package generate-xcodeproj
+            trap 'rm -f "$xcconfig"; git checkout HEAD -- "$DIR"; git clean -f' INT TERM HUP EXIT
 
             echo 'FRAMEWORK_SEARCH_PATHS[sdk=appletv*] = $(inherited) $(PROJECT_DIR)/Carthage/Build/tvOS' >> $xcconfig
             echo 'FRAMEWORK_SEARCH_PATHS[sdk=iphone*] = $(inherited) $(PROJECT_DIR)/Carthage/Build/iOS' >> $xcconfig
@@ -42,8 +40,8 @@ workflows:
             echo "PRODUCT_NAME = ${PREFIX}${PRODUCT_NAME}" >> $xcconfig
             echo "PRODUCT_MODULE_NAME = ${PREFIX}${PRODUCT_NAME}" >> $xcconfig
             echo "OTHER_LDFLAGS = -framework ${PREFIX}ReSwift" >> $xcconfig
-            export XCODE_XCCONFIG_FILE="$xcconfig"
 
+            swift package generate-xcodeproj --xcconfig-overrides $xcconfig
             yarn semantic-release
 
 app:
