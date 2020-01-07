@@ -58,3 +58,4 @@ fastlane/screenshots
 
 node_modules
 *.lock
+*.zip
