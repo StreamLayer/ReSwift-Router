@@ -1,1 +1,1 @@
-{"identifiers":["RouteHash","SetRouteAction","Router","Routable","NavigationReducer","NavigationState","HasNavigationState","SetRouteSpecificData"],"products":["ReSwiftRouter"],"prefix":"SLR_","fnReplace":[]}
+{"identifiers":["HasNavigationState","NavigationState","SetRouteAction","Router","SetRouteSpecificData","RouteHash","Routable","NavigationReducer"],"products":["ReSwiftRouter"],"prefix":"SLR_","fnReplace":[]}

@@ -1,11 +1,7 @@
-ReSwiftRouter-iOS:
+ReSwiftRouter-Package:
   project: ReSwiftRouter.xcodeproj
   sdks:
   - iphoneos
   - iphonesimulator
-
-ReSwiftRouter-tvOS:
-  project: ReSwiftRouter.xcodeproj
-  sdks:
   - appletvos
   - appletvsimulator

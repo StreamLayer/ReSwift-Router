@@ -3,20 +3,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "ReSwift-Router",
+    name: "ReSwiftRouter",
     products: [
-      .library(name: "ReSwift-Router", targets: ["ReSwiftRouter"]),
-    ],
-    dependencies: [
-      .package(url: "https://github.com/StreamLayer/ReSwift.git", .upToNextMajor(from: "5.0.0-slr.403"))
+      .library(name: "ReSwiftRouter", targets: ["ReSwiftRouter"])
     ],
     targets: [
       .target(
         name: "ReSwiftRouter",
-        dependencies: [
-          "ReSwift"
-        ],
-        path: "ReSwiftRouter"
+        path: "ReSwiftRouter",
+        linkerSettings: [
+          .linkedFramework("SLR_ReSwift")
+        ]
       )
     ]
 )

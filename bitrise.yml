@@ -32,6 +32,10 @@ workflows:
             xcconfig=$(mktemp /tmp/static.xcconfig.XXXXXX)
             trap 'rm -f "$xcconfig"; git checkout -- "$DIR"' INT TERM HUP EXIT
 
+            swift package generate-xcodeproj
+
+            echo 'FRAMEWORK_SEARCH_PATHS[sdk=appletv*] = $(inherited) $(PROJECT_DIR)/Carthage/Build/tvOS' >> $xcconfig
+            echo 'FRAMEWORK_SEARCH_PATHS[sdk=iphone*] = $(inherited) $(PROJECT_DIR)/Carthage/Build/iOS' >> $xcconfig
             echo "MACH_O_TYPE = staticlib" >> $xcconfig
             echo "DEBUG_INFORMATION_FORMAT = dwarf" >> $xcconfig
             echo "CLANG_ENABLE_MODULE_DEBUGGING = NO" >> $xcconfig

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "9999"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6209C0601C5427E0004E6B66"
+               BlueprintIdentifier = "ReSwiftRouter::ReSwiftRouter"
                BuildableName = "ReSwiftRouter.framework"
-               BlueprintName = "ReSwiftRouter-tvOS"
+               BlueprintName = "ReSwiftRouter"
                ReferencedContainer = "container:ReSwiftRouter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,28 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6209C0691C5427E0004E6B66"
-               BuildableName = "ReSwiftRouter-tvOSTests.xctest"
-               BlueprintName = "ReSwiftRouter-tvOSTests"
-               ReferencedContainer = "container:ReSwiftRouter.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6209C0601C5427E0004E6B66"
-            BuildableName = "ReSwiftRouter.framework"
-            BlueprintName = "ReSwiftRouter-tvOS"
-            ReferencedContainer = "container:ReSwiftRouter.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -61,17 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6209C0601C5427E0004E6B66"
-            BuildableName = "ReSwiftRouter.framework"
-            BlueprintName = "ReSwiftRouter-tvOS"
-            ReferencedContainer = "container:ReSwiftRouter.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -79,15 +47,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6209C0601C5427E0004E6B66"
-            BuildableName = "ReSwiftRouter.framework"
-            BlueprintName = "ReSwiftRouter-tvOS"
-            ReferencedContainer = "container:ReSwiftRouter.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
