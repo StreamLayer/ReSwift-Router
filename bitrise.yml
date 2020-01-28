@@ -40,6 +40,7 @@ workflows:
             echo "PRODUCT_NAME = ${PREFIX}${PRODUCT_NAME}" >> $xcconfig
             echo "PRODUCT_MODULE_NAME = ${PREFIX}${PRODUCT_NAME}" >> $xcconfig
             echo "OTHER_LDFLAGS = -framework ${PREFIX}ReSwift" >> $xcconfig
+            echo "SWIFT_VERSION = 5.1.3" >> $xcconfig
 
             swift package generate-xcodeproj --xcconfig-overrides $xcconfig
             yarn semantic-release
